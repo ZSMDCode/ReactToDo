@@ -28,6 +28,11 @@ class App extends Component {
     todo.isCompleted = todo.isCompleted ? false : true;
     this.setState({ todos: todos });
   }
+  deleteToDo(index) {
+    const todos = this.state.todos.slice();
+    const todo = todos.filter(todos => index !== todos)
+    this.setState({ todos: todo });
+  }
   render() {
     return (
       <div className="App">
