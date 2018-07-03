@@ -29,9 +29,8 @@ class App extends Component {
     this.setState({ todos: todos });
   }
   deleteToDo(index) {
-    console.log("delete button pressed");
-    const todos = this.state.todos.slice();
-    const todo = todos.filter(todos => index !== todos);
+    const todos = this.state.todos;
+    const todo = todos.filter(item => this.state.todos[index]!== item);
     this.setState({ todos: todo });
   }
   render() {
