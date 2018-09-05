@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -20,6 +20,11 @@
 
 .App-intro {
   font-size: large;
+}
+
+.deleteButton{
+  background-color: red;
+  color: white;
 }
 
 @keyframes App-logo-spin {

@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 class ToDo extends Component {
   render() {
     return (
-      <li>
+      <div>
       <input type="checkbox" checked={ this.props.isCompleted } onChange={ this.props.toggleComplete } />
-      <span>{ this.props.description }</span>
-      </li>
+      <span>{ " " + this.props.description + " "}</span>
+      <button className="deleteButton" onClick={ this.props.deleteToDo }>Delete</button>
+      </div>
     );
   }
 }
