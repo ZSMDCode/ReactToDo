@@ -33,21 +33,21 @@ class App extends Component {
     const todo = todos.filter(item => this.state.todos[index]!== item);
     this.setState({ todos: todo });
   }
-    render() {
-      return (
-        <div className="App">
-        <h1>Today's To Do List: </h1>
-        <ol>
-        { this.state.todos.map( (todo,index) =>
-          <li><ToDo key={ index } description={ todo.description } isCompleted={ todo.isCompleted } toggleComplete={ () => this.toggleComplete(index) } deleteToDo={ () => this.deleteToDo(index)} /></li>
-        )}
-        </ol>
-        <form id="list" onSubmit={ (e) => this.handleSubmit(e) }>
-          <h5>{"Enter a new item: "}<input type="text" value={ this.state.newTodoDescription } onChange={ (e) => this.handleChange(e) } />
-        <input type="submit" /></h5>
-        </form>
-        </div>
-      );
-    }
+  render() {
+    return (
+      <div className="App">
+      <h1>Alphagility To Do List: </h1>
+      <ol>
+      { this.state.todos.map( (todo,index) =>
+        <li><ToDo key={ index } description={ todo.description } isCompleted={ todo.isCompleted } toggleComplete={ () => this.toggleComplete(index) } deleteToDo={ () => this.deleteToDo(index)} /></li>
+      )}
+      </ol>
+      <form id="list" onSubmit={ (e) => this.handleSubmit(e) }>
+      <h5>{"Enter a new item: "}<input type="text" value={ this.state.newTodoDescription } onChange={ (e) => this.handleChange(e) } />
+      <input className="SubmitButton" type="submit" /></h5>
+      </form>
+      </div>
+    );
   }
-  export default App;
+}
+export default App;
