@@ -4,6 +4,10 @@ h1 {
   text-decoration: underline overline;
 }
 
+input {
+  background-color: white;
+}
+
 .App {
   color:white;
   text-align: left;

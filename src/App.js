@@ -44,7 +44,7 @@ class App extends Component {
       </ol>
       <form id="list" onSubmit={ (e) => this.handleSubmit(e) }>
       <h5>{"Enter a new item: "}<input type="text" value={ this.state.newTodoDescription } onChange={ (e) => this.handleChange(e) } />
-      <input className="SubmitButton" type="submit" /></h5>
+      {'  '} <input className="SubmitButton" type="submit" /></h5>
       </form>
       </div>
     );
