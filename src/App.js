@@ -8,7 +8,7 @@ class App extends Component {
       todos: [
         { description: 'Check out www.alphagility.com', isCompleted: true },
         { description: 'Prepare portfolio apps', isCompleted: true },
-        { description: 'Send portfolio apps', isCompleted: false }
+        { description: 'Send portfolio apps', isCompleted: true }
       ],
       newTodoDescription: ''
     };

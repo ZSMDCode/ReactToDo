@@ -1,5 +1,9 @@
 * {background-color: black}
 
+h1 {
+  text-decoration: underline overline;
+}
+
 .App {
   color:white;
   text-align: left;
